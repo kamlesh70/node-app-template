@@ -10,5 +10,9 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
+  rules: {
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/require-await": "off"
+  },
   root: true,
 };
