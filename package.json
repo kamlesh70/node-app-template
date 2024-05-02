@@ -4,7 +4,9 @@
   "description": "auth service for pizza application",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./src/server.ts",
+    "dev": "cross-env NODE_ENV=dev nodemon ./src/server.ts",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=dev node ./dist/src/server.js",
     "test": "jest --watch --runInBand",
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
@@ -22,6 +24,7 @@
     "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.0.11",

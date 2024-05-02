@@ -1,6 +1,3 @@
-import { config } from "dotenv";
-config();
-
 import app from "./app";
 import { APP_CONFIG } from "./config";
 import logger from "./config/logger";
